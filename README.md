@@ -17,5 +17,6 @@ The script includes 2 base scenarios for Windows and Linux virtual machines. It 
 Starts a JIT admin request to create NSG rules from the source IP address specified. It can be used combined with IPify.org service to automate the source IP address detection. Usage example:
 
 `PS C:> $myIP = $(Invoke-WebRequest https://api.ipify.org).Content`
+
 `PS C:> .\StartJITAdminRequest.ps1 -RGName MYRG -Hours 1 -SourceAddress $myIP`
 
